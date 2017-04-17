@@ -11,6 +11,10 @@ public class Boundary
 public class Player : MonoBehaviour {
 	public float speed;
     // Use this for initialization
+
+	public GameObject Laser;
+	public GameObject LaserPosition;
+
     public Boundary boundary;
     void Start () {
 		speed = 3;
@@ -18,6 +22,12 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        if(Input.GetKeyDown("space")){
+			GameObject bullet = (GameObject) Instantiate(Laser);
+			bullet.transform.position = LaserPosition.transform.position;
+		}
+
 		float axisX= Input.GetAxis ("Horizontal");
 		float axisY = Input.GetAxis ("Vertical");
         Vector3 movement = new Vector3(axisX, 0.0f, axisY);
