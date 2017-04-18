@@ -3,32 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Boundary
-{
+public class Boundary {
     public float xMin,xMax, zMin, zMax;
 }
 
 public class Player : MonoBehaviour {
 	public float speed;
-    // Use this for initialization
-
-	public GameObject Laser;
-	public GameObject LaserPosition;
-
-    public Boundary boundary;
-    void Start () {
+    public GameObject Laser;
+	public Boundary boundary;
+	public float laserWait;
+    
+	void Start () {
 		speed = 3;
+		StartCoroutine (SpawnLaser ());
 	}
-	
-	// Update is called once per frame
+
+	IEnumerator SpawnLaser () {
+		while (true) {
+			Instantiate (Laser, transform.position, transform.rotation);
+			yield return new WaitForSeconds (laserWait);
+		}
+	}
+
 	void Update () {
 
         /*if(Input.GetKeyDown("space")){
 			GameObject bullet = (GameObject) Instantiate(Laser);
 			bullet.transform.position = LaserPosition.transform.position;
 */
-		Instantiate (Laser, transform.position, transform.rotation);
-
+		
 
 
 		float axisX= Input.GetAxis ("Horizontal");
