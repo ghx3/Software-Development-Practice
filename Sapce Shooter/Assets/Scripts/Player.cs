@@ -23,13 +23,13 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		/*if(Input.GetKeyDown("space")){
-			
-				GameObject bullet = (GameObject)Instantiate (Laser);
-				bullet.transform.position = LaserPosition.transform.position;
-
-		}*/
+        /*if(Input.GetKeyDown("space")){
+			GameObject bullet = (GameObject) Instantiate(Laser);
+			bullet.transform.position = LaserPosition.transform.position;
+*/
 		Instantiate (Laser, transform.position, transform.rotation);
+
+
 
 		float axisX= Input.GetAxis ("Horizontal");
 		float axisY = Input.GetAxis ("Vertical");
