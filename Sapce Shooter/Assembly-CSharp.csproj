@@ -47,11 +47,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Background.cs" />
-     <Compile Include="Assets\Scripts\DestroyHazardsByCollision.cs" />
+     <Compile Include="Assets\Scripts\DestroyByCollision.cs" />
      <Compile Include="Assets\Scripts\DestroyWhenDone.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\Laser.cs" />
-     <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\MoveAsteroid.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Rotation.cs" />
