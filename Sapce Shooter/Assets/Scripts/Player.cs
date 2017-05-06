@@ -12,7 +12,7 @@ public class Player : MonoBehaviour {
     public GameObject Laser;
 	public Boundary boundary;
 	public float laserWait;
-    
+
 	void Start () {
 		speed = 3;
 		StartCoroutine (SpawnLaser ());
