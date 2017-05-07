@@ -5,6 +5,7 @@ using UnityEngine;
 public class Laser : MonoBehaviour {
 	float speed;
 	// Use this for initialization
+	
 	void Start () {
 		speed = 5f;
 	}
@@ -21,7 +22,7 @@ public class Laser : MonoBehaviour {
 		transform.position = position;
 
 		Vector3 max = (new Vector3 (1, 1,1));
-
+		//destroy rock object
 		if(transform.position.y > max.y){
 			Destroy (gameObject);
 	}

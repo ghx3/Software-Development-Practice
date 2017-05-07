@@ -12,12 +12,12 @@ public class Player : MonoBehaviour {
     public GameObject Laser;
 	public Boundary boundary;
 	public float laserWait;
-
+	//set the ship moving speed
 	void Start () {
 		speed = 3;
 		StartCoroutine (SpawnLaser ());
 	}
-
+	//shoot laser automaticially 
 	IEnumerator SpawnLaser () {
 		while (true) {
 			Instantiate (Laser, transform.position, transform.rotation);
@@ -26,15 +26,9 @@ public class Player : MonoBehaviour {
 	}
 
 	void Update () {
-
-        /*if(Input.GetKeyDown("space")){
-			GameObject bullet = (GameObject) Instantiate(Laser);
-			bullet.transform.position = LaserPosition.transform.position;
-*/
-		
-
-
+		//get horizontal length
 		float axisX= Input.GetAxis ("Horizontal");
+		//get vertical length
 		float axisY = Input.GetAxis ("Vertical");
         Vector3 movement = new Vector3(axisX, 0.0f, axisY);
         GetComponent<Rigidbody>().velocity = movement * speed;
