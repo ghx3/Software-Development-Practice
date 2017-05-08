@@ -8,7 +8,6 @@ D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\UnityEngine
 D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\UnityEngine.dll
 D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\UnityEngine.HoloLens.dll
 D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\UnityEngine.Networking.dll
-D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.dll
 D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\UnityEngine.UI.dll
 D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\UnityEngine.VR.dll
 D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\Mono.Cecil.dll
@@ -23,9 +22,12 @@ D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\UnityEngine
 D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\UnityEditor.xml
 D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\UnityEngine.UI.xml
 D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\UnityEngine.Networking.xml
-D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.xml
 D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\UnityEngine.Analytics.xml
 D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\UnityEngine.HoloLens.xml
 D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\UnityEngine.VR.xml
 D:\GitHub\Software-Development-Practice\Sapce Shooter\obj\Debug\Assembly-CSharp.dll
 D:\GitHub\Software-Development-Practice\Sapce Shooter\obj\Debug\Assembly-CSharp.pdb
+D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\nunit.framework.dll
+D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\UnityEngine.TestRunner.dll
+D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\UnityEngine.TestRunner.xml
+D:\GitHub\Software-Development-Practice\Sapce Shooter\Temp\bin\Debug\nunit.framework.xml
