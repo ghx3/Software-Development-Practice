@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\DestroyByCollision.cs" />
     <Compile Include="Assets\Scripts\DestroyHazardsByCollision.cs" />
     <Compile Include="Assets\Scripts\DestroyWhenDone.cs" />
+    <Compile Include="Assets\Scripts\EnergyBar.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Laser.cs" />
     <Compile Include="Assets\Scripts\Move.cs" />
