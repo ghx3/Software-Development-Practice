@@ -47,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\PlayerTest.cs" />
-     <Compile Include="Assets\Scripts\Editor\NewEditorTest.cs" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>D:/Program Files/Programming/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>

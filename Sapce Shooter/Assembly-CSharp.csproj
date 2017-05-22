@@ -46,18 +46,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AsteroidMove.cs" />
      <Compile Include="Assets\Scripts\Background.cs" />
      <Compile Include="Assets\Scripts\DestroyByCollision.cs" />
-     <Compile Include="Assets\Scripts\DestroyHazardsByCollision.cs" />
      <Compile Include="Assets\Scripts\DestroyWhenDone.cs" />
+     <Compile Include="Assets\Scripts\DiagonalRightMove.cs" />
+     <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\EnemyMove.cs" />
+     <Compile Include="Assets\Scripts\EnergyBar.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
-     <Compile Include="Assets\Scripts\Laser.cs" />
-     <Compile Include="Assets\Scripts\Move.cs" />
-     <Compile Include="Assets\Scripts\MoveAsteroid.cs" />
-     <Compile Include="Assets\Scripts\NewPlayModeTest.cs" />
      <Compile Include="Assets\Scripts\PauseButton.cs" />
+     <Compile Include="Assets\Scripts\PlayAgainButton.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\PlayerDie.cs" />
      <Compile Include="Assets\Scripts\Rotation.cs" />
+     <Compile Include="Assets\Scripts\Stage.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Programming/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
