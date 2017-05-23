@@ -13,6 +13,9 @@ public class Player : MonoBehaviour {
 	public Boundary boundary;
 	public float laserWait;
 
+	public GameObject BigLaser;
+	public bool enableSpawnB = false;
+
 	void Start () {
 		StartCoroutine (SpawnLaser ());
 	}
@@ -24,7 +27,14 @@ public class Player : MonoBehaviour {
 		}
 	}
 
+
+
+
 	void Update () {
+		if (Input.GetKeyDown("space")) {
+			enableSpawnB = true;
+			Instantiate (BigLaser, transform.position, transform.rotation);
+		}
 		//touch input
 		if (Input.touchCount > 0) {
 			Touch touch = Input.GetTouch(0);
@@ -35,6 +45,8 @@ public class Player : MonoBehaviour {
 				GetComponent<Rigidbody>().position = new Vector3(Mathf.Clamp(GetComponent<Rigidbody>().position.x, boundary.xMin, boundary.xMax), 0.0f, 
 					Mathf.Clamp(GetComponent<Rigidbody>().position.z, boundary.zMin, boundary.zMax));
             }
+
+
 		}
 		//keyboard input 
 		
