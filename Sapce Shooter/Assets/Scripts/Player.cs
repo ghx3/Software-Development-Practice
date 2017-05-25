@@ -15,19 +15,36 @@ public class Player : MonoBehaviour {
 	public float laserWait;
 	private Vector3 currentPosition;
 	public GameObject BigLaser;
-	public bool enableSpawnB = false;
+	private bool enableBigLaser;
+	private bool enableLaser;
 
 	void Start () {
+		enableBigLaser = false;
+		enableLaser = true;
 		StartCoroutine (SpawnLaser ());
+
 	}
 	//shoot laser automaticially 
 	IEnumerator SpawnLaser () {
-		while (true) {
+		while (enableLaser) {
 			Instantiate (Laser, transform.position, transform.rotation);
 			yield return new WaitForSeconds (laserWait);
 		}
 	}
 
+	IEnumerator SpawnBigLaser () {
+		while (enableBigLaser) {
+			Instantiate (BigLaser, transform.position, transform.rotation);
+			yield return new WaitForSeconds (0);
+		}
+	}
+
+	IEnumerator BigLaserTimer () {
+		yield return new WaitForSeconds (5);
+		enableBigLaser = false;
+		enableLaser = true;
+		StartCoroutine (SpawnLaser ());
+	}
 
 
 
@@ -35,8 +52,10 @@ public class Player : MonoBehaviour {
 		//currentPosition = transform.position;
 
 		if (Input.GetKeyDown("space")) {
-			enableSpawnB = true;
-			Instantiate (BigLaser, transform.position, transform.rotation);
+			enableBigLaser = true;
+			enableLaser = false;
+			StartCoroutine (SpawnBigLaser ());
+			StartCoroutine (BigLaserTimer());
 		}
 		//BigLaser.transform.position = transform.position;
 		//touch input
