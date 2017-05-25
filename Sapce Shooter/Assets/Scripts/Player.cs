@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+//<<<<<<< HEAD
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,7 +13,7 @@ public class Player : MonoBehaviour {
     public GameObject Laser;
 	public Boundary boundary;
 	public float laserWait;
-
+	private Vector3 currentPosition;
 	public GameObject BigLaser;
 	public bool enableSpawnB = false;
 
@@ -32,10 +32,13 @@ public class Player : MonoBehaviour {
 
 
 	void Update () {
+		//currentPosition = transform.position;
+
 		if (Input.GetKeyDown("space")) {
 			enableSpawnB = true;
 			Instantiate (BigLaser, transform.position, transform.rotation);
 		}
+		//BigLaser.transform.position = transform.position;
 		//touch input
 		if (Input.touchCount > 0) {
 			Touch touch = Input.GetTouch(0);
@@ -66,7 +69,7 @@ public class Player : MonoBehaviour {
 
     }
 }
-=======
+/*====== 
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -123,3 +126,4 @@ public class Player : MonoBehaviour {
     }
 }
 >>>>>>> origin/master
+*/
