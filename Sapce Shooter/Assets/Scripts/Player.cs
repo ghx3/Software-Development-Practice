@@ -17,8 +17,11 @@ public class Player : MonoBehaviour {
 	public GameObject BigLaser;
 	private bool enableBigLaser;
 	private bool enableLaser;
+	private GameController gameController;
 
 	void Start () {
+		GameObject gameControllerObject= GameObject.FindWithTag ("GameController");
+		gameController = gameControllerObject.GetComponent<GameController> ();
 		enableBigLaser = false;
 		enableLaser = true;
 		StartCoroutine (SpawnLaser ());
@@ -44,16 +47,17 @@ public class Player : MonoBehaviour {
 		enableBigLaser = false;
 		enableLaser = true;
 		StartCoroutine (SpawnLaser ());
+		gameController.resetEnergyBar ();
 	}
 
 
 
 	void Update () {
-		//currentPosition = transform.position;
-
-		if (Input.GetKeyDown("space")) {
-			enableBigLaser = true;
+		enableBigLaser = gameController.getBigLaserBool();
+		if (Input.GetKeyDown("space") && enableBigLaser == true) {
 			enableLaser = false;
+		
+			
 			StartCoroutine (SpawnBigLaser ());
 			StartCoroutine (BigLaserTimer());
 		}
