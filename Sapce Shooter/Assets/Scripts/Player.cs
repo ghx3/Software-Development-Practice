@@ -32,7 +32,9 @@ public class Player : MonoBehaviour {
 		while (enableLaser) {
 			Instantiate (Laser, transform.position, transform.rotation);
 			yield return new WaitForSeconds (laserWait);
-		}
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+        }
 	}
 
 	IEnumerator SpawnBigLaser () {
