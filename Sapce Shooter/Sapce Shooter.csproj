@@ -83,7 +83,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\AsteroidMove.cs" />
     <Compile Include="Assets\Scripts\Background.cs" />
-    <Compile Include="Assets\Scripts\BigLaserMove.cs" />
     <Compile Include="Assets\Scripts\DestroyByCollision.cs" />
     <Compile Include="Assets\Scripts\DestroyWhenDone.cs" />
     <Compile Include="Assets\Scripts\DiagonalRightMove.cs" />
