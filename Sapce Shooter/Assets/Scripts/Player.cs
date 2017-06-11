@@ -41,8 +41,10 @@ public class Player : MonoBehaviour {
 
 		if (enableLaser) {
 			Instantiate (Laser, transform.position, transform.rotation);
-			//yield return new WaitForSeconds (laserWait);
-		}
+            //yield return new WaitForSeconds (laserWait);
+            GetComponent<AudioSource>().Play();
+
+        }
 	}
 
 	void SpawnBigLaser () {
